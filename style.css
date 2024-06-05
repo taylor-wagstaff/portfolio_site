@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color:gainsboro;
+  color: gainsboro;
 }
 
 /* Container */
@@ -48,6 +48,10 @@ a:hover {
 
 .right-container {
   grid-area: projects;
+}
+
+.exhibtions {
+  margin-top: 2rem;
 }
 
 /* information */

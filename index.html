@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" defer src="main.js"></script>
+    <script defer src="main.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -20,7 +20,7 @@
 
         <div class="left-container">
           <div>
-            <p>&#127921;</p>
+            <p id="emoji-1">&#127921;</p>
             <p>Practice of Taylor Wagstaff</p>
             <p><em>Taylorwagstaff@gmail.com</em></p>
           </div>
@@ -36,10 +36,10 @@
         <div class="right-container">
           <div class="projects">
             <div>
-              <p>&#128187;</p>
+              <p id="emoji-2">&#128187;</p>
             </div>
             <div>
-              <a href="https://treadler-gal.net/"
+              <a class="a-default" href="https://treadler-gal.net/"
                 ><p style="font-weight: 600">Treadler Art Gallery</p>
                 <p>
                   <em>- Client - NextJs, Javascript, Sass, Sanity CMS</em>
@@ -47,19 +47,19 @@
               >
             </div>
             <div>
-              <a href="https://www.emilscheffmann.net/"
+              <a class="a-default" href="https://www.emilscheffmann.net/"
                 ><p style="font-weight: 600">Emil Scheffmann Writing</p>
                 <p><em>- Client - NextJs, Javascript, CSS, YAML</em></p></a
               >
             </div>
             <div>
-              <a href="https://acrossit.vercel.app/"
+              <a class="a-default" href="https://acrossit.vercel.app/"
                 ><p style="font-weight: 600">AcrossIt Word Game</p>
                 <p><em>- Fun - NextJs, Javascript, CSS</em></p></a
               >
             </div>
             <div>
-              <a href="https://taylor-wagstaff.github.io/"
+              <a class="a-default" href="https://taylor-wagstaff.github.io/"
                 ><p style="font-weight: 600">HTML Color Names Picker</p>
                 <p><em>- Fun - HTML, CSS, Javascript</em></p></a
               >
@@ -67,10 +67,12 @@
           </div>
           <div class="exhibtions">
             <div>
-              <p>&#127912;</p>
+              <p id="emoji-3">&#127912;</p>
             </div>
             <div>
-              <a href="https://coastal-signs.net/shows/input-coverage/"
+              <a
+                class="a-default"
+                href="https://coastal-signs.net/shows/input-coverage/"
                 ><p style="font-weight: 600">Input Coverage</p>
                 <p>
                   <em>- 2 Feb, 2024 - Exhibtion, Coastal Signs Gallery</em>
@@ -78,7 +80,9 @@
               >
             </div>
             <div>
-              <a href="https://coastal-signs.net/shows/smooth-signs"
+              <a
+                class="a-default"
+                href="https://coastal-signs.net/shows/smooth-signs"
                 ><p style="font-weight: 600">Smooth Signs</p>
                 <p>
                   <em>- 11 Feb, 2022 - Exhibtion, Coastal Signs Gallery</em>
@@ -89,5 +93,7 @@
         </div>
       </div>
     </main>
+
+    <!-- <button onclick="handleClick()">click</button> -->
   </body>
 </html>

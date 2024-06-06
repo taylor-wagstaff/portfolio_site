@@ -915,8 +915,18 @@ let linkTag = document.querySelectorAll('.a-default')
 
 linkTag.forEach((x) => {
   x.addEventListener('mouseover', handleClick)
-  x.addEventListener('mouseout', handleClick)
+  x.addEventListener('mouseout', handleMouseOut)
 })
+
+function handleMouseOut() {
+  let emojiOne = document.getElementById('emoji-1')
+  let emojiTwo = document.getElementById('emoji-2')
+  let emojiThree = document.getElementById('emoji-3')
+
+  emojiOne.innerHTML = '&#127921;'
+  emojiTwo.innerHTML = '&#128187;'
+  emojiThree.innerHTML = '&#127912;'
+}
 
 function handleClick() {
   const min = 0
@@ -934,11 +944,60 @@ function handleClick() {
   let randomValueThree = value(min, max)
 
   emojiOne.innerHTML = `${allEmojis[randomValueOne]}`
-
   emojiTwo.innerHTML = `${allEmojis[randomValueTwo]}`
-
   emojiThree.innerHTML = `${allEmojis[randomValueThree]}`
 }
 
 // make it global
 window.handleClick = handleClick
+
+// Scrolling change emojis
+
+let isScrolling
+
+function isPhone() {
+  return window.matchMedia('(max-width: 700px)').matches
+}
+
+// Listen for scroll events
+window.addEventListener(
+  'scroll',
+  function (event) {
+    if (isPhone()) {
+      const min = 0
+      const max = 908
+      let emojiOne = document.getElementById('emoji-1')
+      let emojiTwo = document.getElementById('emoji-2')
+      let emojiThree = document.getElementById('emoji-3')
+
+      let value = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+      }
+
+      let randomValueOne = value(min, max)
+      let randomValueTwo = value(min, max)
+      let randomValueThree = value(min, max)
+
+      emojiOne.innerHTML = `${allEmojis[randomValueOne]}`
+      emojiTwo.innerHTML = `${allEmojis[randomValueTwo]}`
+      emojiThree.innerHTML = `${allEmojis[randomValueThree]}`
+    }
+
+    // Clear our timeout throughout the scroll
+    window.clearTimeout(isScrolling)
+
+    // Set a timeout to run after scrolling ends
+    isScrolling = setTimeout(function () {
+      // Run the callback
+      let emojiOne = document.getElementById('emoji-1')
+      let emojiTwo = document.getElementById('emoji-2')
+      let emojiThree = document.getElementById('emoji-3')
+
+      emojiOne.innerHTML = '&#127921;'
+      emojiTwo.innerHTML = '&#128187;'
+      emojiThree.innerHTML = '&#127912;'
+      console.log('Scrolling has stopped.')
+    }, 1000)
+  },
+  false
+)

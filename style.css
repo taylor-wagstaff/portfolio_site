@@ -26,14 +26,6 @@ a {
   /* transition: color 0.4s ease-in-out; */
 }
 
-/* .contact {
-  display: inline-block;
-  background-color: chartreuse;
-  color: white;
-  padding: 0.7rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
 
 a:hover {
   color: gainsboro;

@@ -1,10 +1,26 @@
+:root {
+  --size-sm: clamp(1rem, 0.925rem + 0.25vw, 1.125rem);
+  --size-md: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --size-lg: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --size-xl: clamp(2rem, 1.4rem + 2vw, 3rem);
+  --size-xxl: clamp(2.5rem, 0.925rem + 5.25vw, 5.125rem);
+  --space-sm: 1.25rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-sm-md: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --space-md-lg: clamp(1.5rem, 0.6rem + 3vw, 3rem);
+  --space-lg-xl: clamp(3rem, 1.8rem + 4vw, 5rem);
+  --site-gutter: clamp(16px, -76.4px + 19.25vw, 170px);
+  --site-offset: 0px;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: var(--size-md);
   -webkit-font-smoothing: antialiased;
   background-color: mintcream;
 }

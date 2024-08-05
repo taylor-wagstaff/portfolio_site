@@ -923,7 +923,7 @@ function handleMouseOut() {
   let emojiTwo = document.getElementById('emoji-2')
   let emojiThree = document.getElementById('emoji-3')
 
-  emojiOne.innerHTML = '&#127921;'
+  emojiOne.innerHTML = '&#127891;'
   emojiTwo.innerHTML = '&#128187;'
   emojiThree.innerHTML = '&#127912;'
 }
@@ -993,7 +993,7 @@ window.addEventListener(
       let emojiTwo = document.getElementById('emoji-2')
       let emojiThree = document.getElementById('emoji-3')
 
-      emojiOne.innerHTML = '&#127921;'
+      emojiOne.innerHTML = '&#127891;'
       emojiTwo.innerHTML = '&#128187;'
       emojiThree.innerHTML = '&#127912;'
       console.log('Scrolling has stopped.')

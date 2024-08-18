@@ -4,158 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-
     <script defer src="main.js"></script>
-    <title>Portfolio</title>
+    <title>Taylor Wagstaff</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <link href="/public/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="header-container"></div>
-
-        <div class="left-container">
-          <div>
-            <div class="contact">
-              <p>Practice of Taylor Wagstaff</p>
-              <p style="font-weight: 100">
-                <em
-                  ><a href="mailto:taylorwagstaff@gmail.com"
-                    >taylorwagstaff@gmail.com</a
-                  ></em
-                >
-              </p>
-            </div>
-            <p id="emoji-1">&#127891;</p>
+      <div id="canvasForHTML"></div>
+      <div class="grid-container">
+        <div class="links-container">
+          <p id="name-heading">Taylor Wagstaff</p>
+          <br />
+          <p>
+            I really enjoy making things. I build and design websites, for myself and
+            others, make oil paintings, have exhibitions, and write
+            occasionally.
+          </p>
+          <br />
+          <div class="pages-container">
+            <a href="/pages/projects.html">web projects</a>
+            <p>/</p>
+            <a href="/pages/exhibitions.html">recent exhibitions</a>
+            <p>/</p>
+            <p><a href="mailto:taylorwagstaff@gmail.com">e-mail me</a></p>
           </div>
-
-          <div class="education">
-            <em>
-              <p>Foundation in Content Design</p>
-              <p>- Content Design London</p>
-              <p>Diploma in Web Development & Design</p>
-              <p>- Whitecliffe College, NZ</p>
-              <p>Full Stack Web Development Bootcamp</p>
-              <p>- Dev Academy, NZ</p>
-              <p>Doctorate of Fine arts</p>
-              <p>- Auckland University, NZ</p></em
-            >
+          <br />
+          <div class="pages-container">
+            <p>
+              here's a list of movies I
+              <a
+                target="_blank"
+                href="https://static-playground.onrender.com/pages/movies.html"
+                >enjoy</a
+              >
+            </p>
           </div>
+          <br />
         </div>
-
-        <div class="right-container">
-          <div class="projects">
-            <div>
-              <p id="emoji-2">&#128187;</p>
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://static-playground.onrender.com/pages/content.html"
-                ><p style="font-weight: 500">Content Design, A Case Study</p>
-                <p>
-                  <em>- Study - User Research, Content Design, Figma Design</em>
-                </p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://treadler-gal.net/"
-                ><p style="font-weight: 500">Treadler Art Gallery</p>
-                <p>
-                  <em>- Client - NextJs, Javascript, Sass, Sanity CMS</em>
-                </p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://www.emilscheffmann.net/"
-                ><p style="font-weight: 500">Emil Scheffmann Writing</p>
-                <p><em>- Client - NextJs, Javascript, CSS, YAML</em></p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://acrossit.vercel.app/"
-                ><p style="font-weight: 500">AcrossIt Word Game</p>
-                <p><em>- Fun - NextJs, React, Javascript, CSS</em></p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://taylor-wagstaff.github.io/"
-                ><p style="font-weight: 500">HTML Color Names Picker</p>
-                <p><em>- Fun - HTML, CSS, Javascript</em></p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://static-playground.onrender.com/pages/everyElement.html"
-                ><p style="font-weight: 500">Every HTML Element</p>
-                <p><em>- Fun - HTML, CSS, Javascript</em></p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://static-playground.onrender.com/"
-                ><p style="font-weight: 500">Static Playground</p>
-                <p><em>- Fun - HTML, CSS, Javascript</em></p></a
-              >
-            </div>
-          </div>
-          <div class="exhibtions">
-            <div>
-              <p id="emoji-3">&#127912;</p>
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://coastal-signs.net/shows/input-coverage/"
-                ><p style="font-weight: 500">Input Coverage</p>
-                <p>
-                  <em>- 2 Feb, 2024 - Exhibtion, Coastal Signs Gallery</em>
-                </p></a
-              >
-            </div>
-            <div>
-              <a
-                class="a-default"
-                target="_blank"
-                href="https://coastal-signs.net/shows/smooth-signs"
-                ><p style="font-weight: 500">Smooth Signs</p>
-                <p>
-                  <em>- 11 Feb, 2022 - Exhibtion, Coastal Signs Gallery</em>
-                </p></a
-              >
-            </div>
-          </div>
-        </div>
+        <div class="projects-container"></div>
         <div class="footer"></div>
-        <div class="links">
-          <a href="https://static-playground.onrender.com/pages/movies.html"
-            ><button id="links-button">&#127909; Fav Movies</button></a
-          >
-        </div>
       </div>
     </main>
   </body>

@@ -36,7 +36,6 @@ ul {
   padding-inline-start: 40px;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -144,11 +143,15 @@ a:active {
 #back-button {
   border: 1.5px solid black;
   padding: 0.2rem;
+  background-color: black;
+  color: white;
 }
 
 #back-button:hover {
-  background-color: black;
-  color: white;
+  border: 1.5px solid black;
+  padding: 0.2rem;
+  background-color: white;
+  color: black;
 }
 
 /* Desktop */
@@ -177,8 +180,7 @@ a:active {
     grid-column: span 7;
   }
 
-  .links-container{
-
-    margin:0.5rem;
+  .links-container {
+    margin: 0.5rem;
   }
 }

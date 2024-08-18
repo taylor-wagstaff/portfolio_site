@@ -36,6 +36,7 @@ ul {
   padding-inline-start: 40px;
 }
 
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -114,7 +115,6 @@ a:active {
   display: flex;
   flex-direction: row;
   gap: 0.2rem;
-  
 }
 
 .pages-container a {
@@ -123,8 +123,6 @@ a:active {
 
 .pages-container a:hover {
   background-color: lemonchiffon;
-
- 
 }
 
 /* #name-heading {
@@ -153,37 +151,34 @@ a:active {
   color: white;
 }
 
-/* .links-container ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: var(--size-xl);
-  font-family: var(--font);
-  font-weight: var(--font-weight);
-  list-style-type: none;
-  list-style-position: outside;
-  list-style-image: none;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  padding-inline-start: 0px;
+/* Desktop */
+/* Greater than or equal to 1000px */
+@media (width >= 1000px) {
+  .projects-container {
+    grid-area: projects;
+    grid-column: span 8;
+  }
 }
 
-.links-container a {
-  color: gainsboro;
-  text-decoration: none;
-  transition: color 0.3s, filter 0.3s;
+/* Ipad */
+/* Between 700px and 1000px */
+@media (700px <= width <= 1000px) {
+  .projects-container {
+    grid-area: projects;
+    grid-column: span 7;
+  }
 }
 
-.links-container a:hover {
-  color: black;
-  background-color: lemonchiffon;
-}
+/* Iphone */
+/* Less than or equal to 700px */
+@media (width <= 700px) {
+  .projects-container {
+    grid-area: projects;
+    grid-column: span 7;
+  }
 
-.links-container a:not(:hover) {
-  filter: blur(1px);
-}
+  .links-container{
 
-#active {
-  color: black;
-  filter: blur(0px);
-} */
+    margin:0.5rem;
+  }
+}

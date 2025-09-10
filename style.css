@@ -23,7 +23,9 @@ a:hover {
   color: red;
 }
 
-
+ul {
+      padding-inline-start: 20px;
+}
 
 figure {
     display: block;

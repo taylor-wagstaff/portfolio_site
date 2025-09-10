@@ -17,170 +17,22 @@ html {
 
 body {
   font-size: var(--size-md);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: var(--font-weight-two);
   background-color: white;
-}
-
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
 }
 
 ul {
-  padding-inline-start: 40px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 2fr 5fr 1fr;
-  grid-template-areas:
-    'links links links links'
-    'projects projects projects projects'
-    'footer footer footer footer';
-
-  height: 100vh;
-  width: 100%;
-}
-
-.links-container {
-  grid-area: links;
-  grid-column: span 8;
-  margin: 2rem;
-}
-
-.links-container li {
-  list-style: none;
-}
-
-/* projects list */
-
-.projects-container {
-  grid-area: projects;
-  grid-column: span 6;
-}
-
-.projects-container ul {
   list-style-type: none;
-}
-
-.projects-container li {
-  margin-bottom: 6px;
-  display: inline-block;
-  /* background-color: rgb(244, 244, 244);  */
-
-  padding: 0.3rem;
-}
-
-.projects-container li a:hover {
-  background-color: lemonchiffon;
-}
-
-.projects-container li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.projects-container li a {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 1rem;
-}
-
-p {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  
 }
 
 a {
-  text-decoration: none;
-}
-a,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
+  
+  text-underline-offset: 120px;
+  text-decoration-thickness: 20px; 
 }
 
-.pages-container {
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
+a:hover {
+  color: red;
 }
 
-.pages-container a {
-  color: dodgerblue;
-}
 
-.pages-container a:hover {
-  background-color: lemonchiffon;
-}
-
-/* #name-heading {
-  font-weight:bold;
-
-} */
-
-.text {
-  color: dodgerblue;
-  padding: 0.2rem;
-}
-
-.sub-text {
-  font-weight: 100;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 0.2rem;
-}
-
-#back-button {
-  border: 1.5px solid black;
-  padding: 0.2rem;
-  background-color: black;
-  color: white;
-}
-
-#back-button:hover {
-  border: 1.5px solid black;
-  padding: 0.2rem;
-  background-color: white;
-  color: black;
-}
-
-/* Desktop */
-/* Greater than or equal to 1000px */
-@media (width >= 1000px) {
-  .projects-container {
-    grid-area: projects;
-    grid-column: span 8;
-  }
-}
-
-/* Ipad */
-/* Between 700px and 1000px */
-@media (700px <= width <= 1000px) {
-  .projects-container {
-    grid-area: projects;
-    grid-column: span 7;
-  }
-}
-
-/* Iphone */
-/* Less than or equal to 700px */
-@media (width <= 700px) {
-  .projects-container {
-    grid-area: projects;
-    grid-column: span 7;
-  }
-
-  .links-container {
-    margin: 0.5rem;
-  }
-}

@@ -1,37 +1,28 @@
-
-
-
 body {
- 
   background-color: white;
 }
 
-
-
 a {
-  
   text-underline-offset: 3px;
-
-
 }
 
 img {
-
-  max-width:400px;
+  max-width: 400px;
+  margin-left: 0;
 }
 a:hover {
   color: red;
 }
 
 ul {
-      padding-inline-start: 20px;
+  padding-inline-start: 20px;
 }
 
 figure {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
-    unicode-bidi: isolate;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  unicode-bidi: isolate;
 }

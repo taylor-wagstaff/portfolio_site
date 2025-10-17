@@ -4,18 +4,33 @@ body {
 
 a {
   text-underline-offset: 3px;
+  color: blue;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#orange {
+  color: black;
+  text-decoration: none;
+}
+
+#orange:hover {
+  color: darkgray;
 }
 
 img {
-  max-width: 400px;
+  max-width: 350px;
   margin-left: 0;
 }
 a:hover {
-  color: red;
+  color: darkgray;
 }
 
 ul {
   padding-inline-start: 20px;
+  list-style: none;
 }
 
 figure {

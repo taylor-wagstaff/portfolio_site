@@ -1,7 +1,22 @@
 body {
-  background-color: white;
+  background-color:white;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.header p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
 a {
   text-underline-offset: 3px;
   color: blue;
@@ -25,7 +40,8 @@ img {
   margin-left: 0;
 }
 a:hover {
-  color: darkgray;
+  color:rgb(181, 102, 181);
+  font-style: italic;
 }
 
 ul {

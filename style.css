@@ -1,5 +1,5 @@
 body {
-  background-color:white;
+  background-color: white;
 }
 
 .header {
@@ -34,13 +34,18 @@ li {
 #orange:hover {
   color: darkgray;
 }
+/* 
+#caption {
+  background-color:lightgray;;
+  width: fit-content;
+} */
 
 img {
   max-width: 350px;
   margin-left: 0;
 }
 a:hover {
-  color:rgb(181, 102, 181);
+  color: violet;
   font-style: italic;
 }
 

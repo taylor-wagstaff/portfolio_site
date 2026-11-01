@@ -76,6 +76,8 @@ li:hover {
 img {
   max-width: 350px;
   margin-left: 0;
+  min-width: 300px;
+  width: 100%;
 }
 
 ul {
